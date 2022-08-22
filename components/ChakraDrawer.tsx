@@ -19,7 +19,7 @@ import React, { useEffect, useState } from "react";
 import { StarIcon } from "@chakra-ui/icons";
 import { FilterDrawer } from "./FilterDrawer";
 
-export const ChakraDrawer = ({ state, setState }) => {
+export const ChakraDrawer = ({ state, setState }: any) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [searchState, setSearchState] = useState(state);
 
